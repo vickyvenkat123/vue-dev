@@ -1,0 +1,76 @@
+{
+  "employees": [
+    {
+      "name": "lucky",
+      "email": "lucky@gmail.com",
+      "password": "lucky@123",
+      "contact": "09766538832",
+      "gender": "Male",
+      "address": "TIRUPATHI",
+      "department": 5,
+      "designation": "IT",
+      "id": 8
+    },
+    {
+      "name": "Venkat",
+      "email": "venkat@gmail.com",
+      "password": "venkat@12",
+      "contact": "97048765948",
+      "gender": "Male",
+      "address": "TIRUPATHI",
+      "department": "",
+      "designation": "Finance",
+      "id": 9
+    },
+    {
+      "name": "John",
+      "email": "john@gmail.com",
+      "password": "JOHN2123",
+      "contact": "8987489389",
+      "gender": "Male",
+      "address": "TIRUPATHI",
+      "department": "",
+      "designation": "IT",
+      "id": 10
+    }
+  ],
+  "departmen": [
+    {
+      "designation": "",
+      "department": "Finance",
+      "id": 5
+    },
+    {
+      "designation": "",
+      "department": "ionic",
+      "id": 6
+    },
+    {
+      "designation": "",
+      "department": "IT",
+      "id": 7
+    },
+    {
+      "designation": "",
+      "department": "IOS",
+      "id": 8
+    }
+  ],
+  "addemployee": [
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "contact": "",
+      "gender": "",
+      "address": "",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "usermail": "Venkat",
+      "password": "Venkat@12"
+    }
+  ]
+}
