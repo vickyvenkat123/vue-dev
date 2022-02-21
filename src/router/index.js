@@ -9,6 +9,7 @@ import Employedetails from '@/components/Employedetails'
 import Updatedesi from '@/components/Updatedesi'
 import AddDepartment from '@/components/AddDepartment'
 import Login from '@/components/Login'
+import ForgetPassword from '@/components/ForgetPassword'
 Vue.use(Router)
 
 export default new Router({
@@ -17,6 +18,7 @@ export default new Router({
       path:'/login',
       name:"Login",
       component:Login
+      
     },
     {
       path: '/layout',
@@ -63,6 +65,9 @@ export default new Router({
         {
           path:'/addDepartment',
           component:AddDepartment
+        },{
+          path:'/forgetpassword',
+          component:ForgetPassword
         }
       ]
     },

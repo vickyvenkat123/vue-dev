@@ -97,9 +97,7 @@ export default {
     getDept(id){
       if(this.deptList.length>0){
 let dept = this.deptList.find(e=>e.id==id);
-console.log(dept,"ll")
 
-return dept.department
       }
 
 },

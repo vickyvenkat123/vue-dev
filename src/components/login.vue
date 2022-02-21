@@ -21,6 +21,15 @@
     <div class="text-center mt-4">
       <button class="btn btn-primary" @click="getLoginData()">Login</button>
     </div>
+    <div class="login-footer">
+      <!-- <p><span>Forget Password</span></p> -->
+ <button type="button" class="forget" @click="forgetPassword()">Forget Password</button>
+    </div><br><br>
+    <div class="footer-singUp">
+    <!-- <span> Not a Member?<a href="./create">SignUp</a></span> -->
+    <p>Not a member?<button type="button" class="Signup" @click="signup()">SignUp</button></p>
+    
+   </div>
   </form>
   <!-- Default form login -->
 </template>
@@ -36,7 +45,12 @@ export default {
       },
     };
   },
- 
+  created: function () {
+    document.body.style.backgroundColor = "blue";
+  },
+  destroyed: function () {
+    document.body.style.backgroundColor = null;
+  },
 
 
   mounted() {
@@ -60,7 +74,6 @@ export default {
               localStorage.usermail = response.data[0].email;
                 localStorage.username = response.data[0].name;
               localStorage.password = response.data[0].password;
-
               this.$router.replace("/employedetails");
             } else {
               alert("password incorrect");
@@ -72,24 +85,47 @@ export default {
         .catch((error) => {
           console.log(error);
         });
-
-      console.log("now pretend I did more stuff...");
     },
-   
+    signup(){
+this.$router.push("/create")
+    },
+    forgetPassword(){
+      this.$router.push("/forgetpassword")
+    }
   },
 };
 </script>
 
 <style>
+
 form {
   width: 30%;
   padding: 40px;
   margin: 0;
-  border: 1px solid black;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+}
+.login-footer{
+  float: right;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.footer-singUp{
+   font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
+}
+.forget,.Signup{
+  background-color: white;
+  border:2px solid white ;
+  color: blue !important;
+}
+p{
+font-weight: 450;
 }
 </style>
